@@ -8,7 +8,8 @@ int head[M], cnt, dist[N], n, m, s;
 bool vis[N];
 
 struct qwq{ int v, next, c; } edge[M];
-inline void add(int x, int y, int c) { edge[++cnt] = (qwq){ y, head[x], c}, head[x] = cnt;}
+inline void add(int x, int y, int c) { edge[++cnt] = (qwq){ y, head[x], c}, head[x] = cnt;}
+
 priority_queue< pair<int, int> > q;
 void dijkstra(){
 	for(int i=1;i<=n;i++){
