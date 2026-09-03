@@ -51,7 +51,8 @@ int main(){
 using namespace std;
 const int N = 5555;
 const int mod = 80112002;
-int n,m;
+int n,m;
+
 int mapp[N][N], indegree[N], outdegree[N], cnt[N];
 
 int main(){
